@@ -14,6 +14,8 @@ npx cap sync
 <docgen-index>
 
 * [`echo(...)`](#echo)
+* [`loadUrl(...)`](#loadurl)
+* [Interfaces](#interfaces)
 
 </docgen-index>
 
@@ -33,5 +35,30 @@ echo(options: { value: string; }) => any
 **Returns:** <code>any</code>
 
 --------------------
+
+
+### loadUrl(...)
+
+```typescript
+loadUrl(options: LoadUrlOptions) => any
+```
+
+| Param         | Type                                                      |
+| ------------- | --------------------------------------------------------- |
+| **`options`** | <code><a href="#loadurloptions">LoadUrlOptions</a></code> |
+
+**Returns:** <code>any</code>
+
+--------------------
+
+
+### Interfaces
+
+
+#### LoadUrlOptions
+
+| Prop      | Type                |
+| --------- | ------------------- |
+| **`url`** | <code>string</code> |
 
 </docgen-api>

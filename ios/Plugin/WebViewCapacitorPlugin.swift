@@ -17,10 +17,12 @@ public class WebViewCapacitorPlugin: CAPPlugin {
     }
 
     @objc func loadUrl(_ call: CAPPluginCall) {
-        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        let newViewController = storyBoard.instantiateViewController(withIdentifier: "ViewController")
+        let vc = ViewController()
+        
+        vc.modalPresentationStyle = .fullScreen
+
         DispatchQueue.main.async {
-            self.bridge?.viewController?.present(newViewController, animated: true, completion: nil)
+            self.bridge?.viewController?.present(vc, animated: true, completion: nil)
         }
     }
 }

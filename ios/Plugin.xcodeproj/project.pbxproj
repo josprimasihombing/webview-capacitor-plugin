@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		03FC29A292ACC40490383A1F /* Pods_Plugin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B2A61DA5A1F2DD4F959604D /* Pods_Plugin.framework */; };
 		0539713926C246800016D888 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0539713826C246800016D888 /* ViewController.swift */; };
-		0539713B26C2472B0016D888 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0539713A26C2472B0016D888 /* Main.storyboard */; };
 		20C0B05DCFC8E3958A738AF2 /* Pods_PluginTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6753A823D3815DB436415E3 /* Pods_PluginTests.framework */; };
 		2F98D68224C9AAE500613A4C /* WebViewCapacitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F98D68124C9AAE400613A4C /* WebViewCapacitor.swift */; };
 		50ADFF92201F53D600D50D53 /* Plugin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50ADFF88201F53D600D50D53 /* Plugin.framework */; };
@@ -32,7 +31,6 @@
 
 /* Begin PBXFileReference section */
 		0539713826C246800016D888 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		0539713A26C2472B0016D888 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		2F98D68124C9AAE400613A4C /* WebViewCapacitor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewCapacitor.swift; sourceTree = "<group>"; };
 		3B2A61DA5A1F2DD4F959604D /* Pods_Plugin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Plugin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		50ADFF88201F53D600D50D53 /* Plugin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Plugin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -98,7 +96,6 @@
 			children = (
 				0539713826C246800016D888 /* ViewController.swift */,
 				50E1A94720377CB70090CE1A /* WebViewCapacitorPlugin.swift */,
-				0539713A26C2472B0016D888 /* Main.storyboard */,
 				2F98D68124C9AAE400613A4C /* WebViewCapacitor.swift */,
 				50ADFF8B201F53D600D50D53 /* WebViewCapacitorPlugin.h */,
 				50ADFFA72020EE4F00D50D53 /* WebViewCapacitorPlugin.m */,
@@ -236,7 +233,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0539713B26C2472B0016D888 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

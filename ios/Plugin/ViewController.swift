@@ -1,6 +1,7 @@
 import UIKit
 import WebKit
-class WebViewController: UIViewController, WKUIDelegate {
+
+class ViewController: UIViewController, WKUIDelegate {
     
     var webView: WKWebView!
     
@@ -10,10 +11,16 @@ class WebViewController: UIViewController, WKUIDelegate {
         webView.uiDelegate = self
         view = webView
     }
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
         let myURL = URL(string:"https://www.apple.com")
         let myRequest = URLRequest(url: myURL!)
         webView.load(myRequest)
-    }}
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        self.dismiss(animated: true, completion: nil)
+    }
+}

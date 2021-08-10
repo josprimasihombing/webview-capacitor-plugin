@@ -15,4 +15,12 @@ public class WebViewCapacitorPlugin: CAPPlugin {
             "value": implementation.echo(value)
         ])
     }
+
+    @objc func loadUrl(_ call: CAPPluginCall) {
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let newViewController = storyBoard.instantiateViewController(withIdentifier: "ViewController")
+        DispatchQueue.main.async {
+            self.bridge?.viewController?.present(newViewController, animated: true, completion: nil)
+        }
+    }
 }
